@@ -13,10 +13,10 @@ END
 
 my $out = <<'END';
 Name:     perl-AudioFile-Info-MP3-ID3Lib
-Version:  1.05
-Release:  1
-Group:    Applications/CPAN
-Packager: dave@mag-sol.com
+Version:  1.07
+Release:  1.fc11
+Group:    Development/Libraries
+Packager: Dave Cross <dave@mag-sol.com>
 END
 
 my $tt = Template->new;
