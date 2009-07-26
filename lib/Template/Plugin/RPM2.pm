@@ -21,7 +21,7 @@ Version 0.01
 
 =cut
 
-our $VERSION = sprintf "%d.%02d", '$Revision$ ' =~ /(\d+)\.(\d+)/;
+our $VERSION = '1.02';
 
 =head1 SYNOPSIS
 
