@@ -24,8 +24,8 @@ my $builder = Module::Build->new(
         resources => {
             repository => {
                 type => 'git',
-                url  => 'git://github.com/davorg/perlanet.git',
-                web  => 'https://github.com/davorg/perlanet',
+                url  => 'git://github.com/davorg/template-plugin-rpm2.git',
+                web  => 'https://github.com/davorg/template-plugin-rpm2',
             },
         },
     },
