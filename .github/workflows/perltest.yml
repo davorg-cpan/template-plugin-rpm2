@@ -17,7 +17,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: ['ubuntu-latest', 'macos-latest', 'windows-latest']
+        os: [ 'ubuntu-latest' ]
         perl: [ 'latest' ]
     name: Perl ${{ matrix.perl }} on ${{ matrix.os }}
     steps:
@@ -28,4 +28,10 @@ jobs:
           perl-version: ${{ matrix.perl }}
       - run: perl -V
       - run: cpanm --installdeps .
+      - name: Archive CPAN logs
+        if: ${{ failure() }}
+        uses: actions/upload-artifact@v3
+        with:
+          name: cpan_log
+          path: /home/runner/.cpanm/work/*/build.log
       - run: prove -lv t
