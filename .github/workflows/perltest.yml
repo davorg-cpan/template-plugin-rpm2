@@ -15,6 +15,7 @@ on:
 jobs:
   build:
     runs-on: ${{ matrix.os }}
+    container: davorg/centos-realperl
     strategy:
       matrix:
         os: [ 'ubuntu-latest' ]
