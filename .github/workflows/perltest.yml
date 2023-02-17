@@ -28,6 +28,7 @@ jobs:
 #        with:
 #          perl-version: ${{ matrix.perl }}
       - run: perl -V
+      - run: cpan App-cpanminus
       - run: cpanm --installdeps .
       - name: Archive CPAN logs
         if: ${{ failure() }}
