@@ -28,8 +28,7 @@ jobs:
 #        with:
 #          perl-version: ${{ matrix.perl }}
       - run: perl -V
-      - run: cpan CPAN
-      - run: cpan App-cpanminus
+      - run: yum install perl-App-cpanminus
       - run: cpanm --installdeps .
       - name: Archive CPAN logs
         if: ${{ failure() }}
