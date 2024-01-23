@@ -24,11 +24,11 @@ my $builder = Module::Build->new(
         resources => {
             repository => {
                 type => 'git',
-                url  => 'git://github.com/davorg/template-plugin-rpm2.git',
-                web  => 'https://github.com/davorg/template-plugin-rpm2',
+                url  => 'git://github.com/davorg-cpan/template-plugin-rpm2.git',
+                web  => 'https://github.com/davorg-cpan/template-plugin-rpm2',
             },
             bugtracker => {
-                web  => 'https://github.com/davorg/template-plugin-rpm2/issues',
+                web  => 'https://github.com/davorg-cpan/template-plugin-rpm2/issues',
             },
         },
     },
